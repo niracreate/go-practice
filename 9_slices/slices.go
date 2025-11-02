@@ -48,4 +48,7 @@ func main() {
 	var nums1 = []int{1, 2}
 	var nums2 = []int{1, 2}
 	fmt.Println(slices.Equal(nums1, nums2))
+
+	var nums = [][]int{{1, 3, 5}, {4, 5, 7}}
+	fmt.Println(nums)
 }
