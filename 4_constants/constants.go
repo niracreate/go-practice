@@ -4,9 +4,9 @@ import "fmt"
 
 // const age = 20
 func main() {
-	const name = "golang"
+	// const name = "golang"
 	// fmt.Println(age)
- 	//constant grouping 
+	//constant grouping
 	const (
 		port = 5000
 		host = "localhost"
