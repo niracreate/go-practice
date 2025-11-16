@@ -25,15 +25,15 @@ func main() {
 	// fmt.Println(cap(nums))
 	// fmt.Println(len(nums))
 
-	// var nums = make([]int, 0, 5)
-	// nums = append(nums, 2)
-	// var nums2 = make([]int, len(nums))
+	var nums = make([]int, 0, 5)
+	nums = append(nums, 2)
+	var nums2 = make([]int, len(nums))
 
-	// //copy function
+	//copy function
 
-	// copy(nums2, nums)
+	copy(nums2, nums)
 
-	// fmt.Println(nums, nums2)
+	fmt.Println(nums, nums2)
 
 	//slice operator
 	// var nums = []int{1, 2, 3}
