@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"time"
+)
 
 func main() {
 	// i := 3
@@ -18,25 +21,25 @@ func main() {
 
 	// multiple condition switch
 
-	// switch time.Now().Weekday() {
-	// case time.Saturday, time.Sunday:
-	// 	fmt.Println("Its weekend")
-	// default:
-	// 	fmt.Println("Its work day")
-	// }
-	//type switch
-	whoAmI := func(i interface{}) {
-		switch t := i.(type) {
-		case int:
-			fmt.Println("Its an integer")
-		case string:
-			fmt.Println("Its an string")
-		case bool:
-			fmt.Println("Its an boolean")
-		default:
-			fmt.Println("other", t)
-		}
+	switch time.Now().Weekday() {
+	case time.Saturday, time.Sunday:
+		fmt.Println("Its weekend")
+	default:
+		fmt.Println("Its work day")
 	}
-	whoAmI(true)
+	//type switch
+	// whoAmI := func(i any) {
+	// 	switch t := i.(type) {
+	// 	case int:
+	// 		fmt.Println("Its an integer")
+	// 	case string:
+	// 		fmt.Println("Its an string")
+	// 	case bool:
+	// 		fmt.Println("Its an boolean")
+	// 	default:
+	// 		fmt.Println("other", t)
+	// 	}
+	// }
+	// whoAmI(true)
 
 }

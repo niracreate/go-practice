@@ -16,4 +16,6 @@ func main() {
 	// var price = 55.2
 	price := 50.1
 	fmt.Println(price)
+	
 }
+
