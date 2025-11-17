@@ -13,4 +13,8 @@ func main() {
 	changeNum(&num) //&num gives the address of num.
 	// fmt.Println("Memory address", &num)
 	fmt.Println("After changeNum in main", num)
+	// a := 2
+	// p := &a
+	// fmt.Println(*p)
+
 }
