@@ -5,6 +5,8 @@ import (
 )
 
 func main() {
+	fmt.Println("for loop")
+
 	//while loop
 	// i := 1
 	// for i <= 3 {

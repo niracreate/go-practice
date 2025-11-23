@@ -1,1 +1,5 @@
-pkgm
+package main
+
+func main() {
+	
+}
