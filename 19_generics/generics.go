@@ -4,9 +4,9 @@ import (
 	"fmt"
 )
 
-func PrintSlice[T comparable](items []T) { //if you want specific types to allow use T int | string
+func PrintSlice[T comparable, V string](items []T, name V) { //if you want specific types to allow use T int | string
 	for _, item := range items {
-		fmt.Println(item)
+		fmt.Println(item,name)
 	}
 }
 
@@ -26,7 +26,7 @@ func main() {
 
 	names := []string{"golang", "java"}
 	// // PrintStringSlice(names)
-	PrintSlice(names)
+	PrintSlice(names, "nira")
 	// PrintSlice(nums)
 // myStack := stack[string]{
 // 	elements: []string{"go", "java"},
