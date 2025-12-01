@@ -1,3 +1,4 @@
+// write a go code that creates a file inside current dirrectory names hello.txt
 package main
 
 import (
@@ -6,25 +7,13 @@ import (
 )
 
 func main() {
-	// Name of the new folder
-	folderName := "my_new_folder"
-
-	// Create a new folder with permission 0755
-	err := os.Mkdir(folderName, 0755)
-	if err != nil {
-		fmt.Println("Error creating folder:", err)
-		return
-	}
-	fmt.Println("Folder created successfully:", folderName)
-
-	// Optional: Create a new file inside the folder
-	filePath := folderName + "/example.txt"
-	file, err := os.Create(filePath)
+	// Create a file named "hello.txt" in the current directory
+	file, err := os.Create("hello.txt")
 	if err != nil {
 		fmt.Println("Error creating file:", err)
 		return
 	}
 	defer file.Close()
 
-	fmt.Println("File created successfully:", filePath)
+	fmt.Println("File 'hello.txt' created successfully")
 }
